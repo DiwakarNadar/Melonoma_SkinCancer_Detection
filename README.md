@@ -22,4 +22,17 @@ Melanoma Skin Cancer Detection is a web application designed to assist users in 
 - **Machine Learning**: TensorFlow, Scikit-learn
 - **Deployment**: Docker, Heroku
 
+## Installation
+
+1. Clone the repository:
+git clone <https://github.com/DiwakarNadar/Melonoma_SkinCancer_Detection>
+
+2. Navigate to the project directory:
+cd melanoma-skin-cancer-detection
+
+3. Install dependencies:
+pip install -r requirements.txt
+
+4. Run the application:
+python app.py
 
