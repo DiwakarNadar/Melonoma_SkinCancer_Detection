@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cancer Details</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='st.css') }}">
+</head>
+
+<body>
+    <div class="det-back">
+        <h1><center><b>Cancer Details</b></center></h1>
+        <p><b>Name:</b> {{ details['Name'] }}</p>
+        <p><b>Description:</b> {{details['Description'] }}</p>
+        <p><b>Symptoms:</b></p>
+        <ul>
+            <li>{{ details['Symptoms'][0] }}</li>
+            <li>{{ details['Symptoms'][1] }}</li>
+            <li>{{ details['Symptoms'][2] }}</li>
+            <li>{{ details['Symptoms'][3] }}</li>
+        </ul>
+        <p><b>Diagnosis :</b></p>
+         <ul>
+            <li>{{ details['Diagonosis'][0] }}</li>
+            <li>{{ details['Diagonosis'][1] }}</li>
+            <li>{{ details['Diagonosis'][2] }}</li>
+        </ul>
+    </div>
+    
+    <!-- Display cancer details here -->
+</body>
+</html>

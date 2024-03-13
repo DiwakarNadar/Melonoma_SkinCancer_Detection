@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background-image: url('bkgggg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-size: large;
+}
+
+.header
+{
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+    background-color: black;
+    color: aliceblue;
+}
+.form
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 40px;
+}
+input[type="file"]{
+    display: none;
+  }
+  label{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 8px 8px 8px 8px;
+    margin-right: 100px;
+}
+.predict
+{
+    color: white;
+    background-color: rgb(21, 174, 21);
+    cursor: pointer;
+    padding: 8px 8px 8px 8px;
+
+}
+.cooseed-img
+{
+    height: 300px;
+    width: 250px;
+}
+.prediction
+{
+    font-size: 23px;
+
+}
+.details
+{
+display: flex;
+align-items: center;
+justify-content:center;
+}
+
+.view_details
+{
+text-decoration:none;
+color:white;
+cursor: pointer;
+}
+.view
+{
+margin-left:20px;
+background-color:blue;
+padding:3px 3px 3px 3px;
+}

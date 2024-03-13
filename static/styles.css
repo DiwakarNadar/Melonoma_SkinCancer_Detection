@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url('bko.png');
+    background-size: cover; /* Set background size to cover the entire background */
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+    margin: 0;
+    color: white;
+    height: 100vh;
+}
+
+h1 {
+    font-family: "Harlow Solid Italic";
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.header {
+    border-bottom: 4px solid black;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    font-size: 2.2rem;
+    font-weight: bold;
+    background-color: black;
+}
+
+.form {
+    display: flex;
+    flex-direction: column; /* Change to column layout on smaller screens */
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label, .predict {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    margin: 0.5rem; /* Add margin for better spacing */
+}
+
+.predict {
+    background-color: rgb(21, 174, 21);
+}
+
+.cooseed-img {
+    height: auto;
+    width: 100%;
+    max-width: 250px;
+    max-height: 300px;
+}
+
+.prediction {
+    font-size: 1.5rem;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 2rem;
+}
+
+.view_details {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border-radius: 3px;
+    
+}
+
+.view {
+    margin-left: 1rem;
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}
+
+@media (min-width: 768px) { /* Apply styles for screens wider than 768px */
+    .form {
+        flex-direction: row; /* Change back to row layout */
+        justify-content: center;
+    }
+
+    label, .predict {
+        margin: 0; /* Remove margin for larger screens */
+    }
+
+    .predict {
+        margin-left: 1rem; /* Add spacing between elements */
+    }
+}
+.drag-box {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 2px dashed #ccc;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    cursor: move;
+}
+
+.form {
+    margin-top: 20px; /* Adjust margin-top to make space for the draggable box */
+}
+.d{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.drop-zone {
+    max-width: 200px;
+    height: 200px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed #585252;
+    border-radius: 10px;
+    margin: 0 auto; /* Center horizontally */
+
+}
+
+@media (min-width: 768px) {
+    .drop-zone {
+        max-width: 300px; /* Increase max-width on larger screens */
+        height: 200px; /* Increase height on larger screens */
+    }
+}
+  
+  .drop-zone--over {
+    border-style: solid;
+  }
+  
+  .drop-zone__input {
+    display: none;
+  }
+  
+  .drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+    text-align: center;
+  }
+  

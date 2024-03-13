@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skin Sight Vision</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<header class="header">
+    <div>
+        Melonoma Skin Cancer Detection
+    </div>
+</header>
+
+<div>
+    <h1>Spot It Early, Beat It Easily.</h1>
+</div>
+<div class="d">
+    <div class="drop-zone">
+        <span class="drop-zone__prompt">Drop Your image here or click to upload</span>
+        <input type="file" name="myFile" class="drop-zone__input">
+      </div>
+    
+      <div class="details">
+        <p class="prediction"></p>
+        <div class="view">
+            <a class="view_details" ></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="form">
+    <button id="predictButton" class="predict">Predict</button>
+</div>
+<script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
